@@ -98,3 +98,10 @@ Initial set up of MongoDB database:
 - access the mongo shell with `docker exec -it mongodb_dockerhub mongosh -u admin -p secret`
 - run command, `show dbs` within the mongo shell to see a list of databases
 - type `exit` to quit the shell after you confirm it is working
+
+
+My Edits
+- **Backend route:** `GET http://localhost:7001/api/about` returns JSON (`name`, `paragraphs`, `photoUrl`).
+- **Photo served by backend:** `http://localhost:7001/static/me.jpg` (file at `back-end/public/me.jpg`).
+- **Frontend page:** `http://localhost:7002/about` fetches the JSON and renders it.
+
